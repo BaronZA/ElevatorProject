@@ -55,7 +55,7 @@ namespace Elevator
                     {
                         enterNewPeople = false;
                     }
-                    else if(answer == "Y")
+                    else if (answer == "Y")
                     {
                         List<Person> people = new List<Person>();
 
