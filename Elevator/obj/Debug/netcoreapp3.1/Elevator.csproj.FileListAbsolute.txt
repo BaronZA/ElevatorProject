@@ -1,0 +1,14 @@
+C:\Users\Baron\source\repos\Elevator\Elevator\bin\Debug\netcoreapp3.1\Elevator.exe
+C:\Users\Baron\source\repos\Elevator\Elevator\bin\Debug\netcoreapp3.1\Elevator.deps.json
+C:\Users\Baron\source\repos\Elevator\Elevator\bin\Debug\netcoreapp3.1\Elevator.runtimeconfig.json
+C:\Users\Baron\source\repos\Elevator\Elevator\bin\Debug\netcoreapp3.1\Elevator.runtimeconfig.dev.json
+C:\Users\Baron\source\repos\Elevator\Elevator\bin\Debug\netcoreapp3.1\Elevator.dll
+C:\Users\Baron\source\repos\Elevator\Elevator\bin\Debug\netcoreapp3.1\Elevator.pdb
+C:\Users\Baron\source\repos\Elevator\Elevator\obj\Debug\netcoreapp3.1\Elevator.csproj.AssemblyReference.cache
+C:\Users\Baron\source\repos\Elevator\Elevator\obj\Debug\netcoreapp3.1\Elevator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Baron\source\repos\Elevator\Elevator\obj\Debug\netcoreapp3.1\Elevator.AssemblyInfoInputs.cache
+C:\Users\Baron\source\repos\Elevator\Elevator\obj\Debug\netcoreapp3.1\Elevator.AssemblyInfo.cs
+C:\Users\Baron\source\repos\Elevator\Elevator\obj\Debug\netcoreapp3.1\Elevator.csproj.CoreCompileInputs.cache
+C:\Users\Baron\source\repos\Elevator\Elevator\obj\Debug\netcoreapp3.1\Elevator.dll
+C:\Users\Baron\source\repos\Elevator\Elevator\obj\Debug\netcoreapp3.1\Elevator.pdb
+C:\Users\Baron\source\repos\Elevator\Elevator\obj\Debug\netcoreapp3.1\Elevator.genruntimeconfig.cache
