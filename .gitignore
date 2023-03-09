@@ -12,3 +12,8 @@
 /.vs/Elevator/DesignTimeBuild
 /.vs/Elevator
 /.vs
+*.suo
+*.user
+bin
+obj
+packages
