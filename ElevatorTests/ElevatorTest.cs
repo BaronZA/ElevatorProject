@@ -1,6 +1,5 @@
-using System;
-using Xunit;
 using Elevator;
+using Xunit;
 
 namespace ElevatorTests
 {
@@ -34,16 +33,17 @@ namespace ElevatorTests
             Assert.Equal(ElevatorStatus.MovingDown, elevator.Status);
         }
 
-        //[Fact]
-        //public void TestArriveAtNextFloor()
-        //{
-        //    var elevator = new Elevator.Elevator(1, 5);
+        [Fact]
+        public void TestArriveAtNextFloor()
+        {
+            var elevator = new Elevator.Elevator(1, 5);
 
-        //    elevator.AddUniqueFloorMovement(3);
+            elevator.AddUniqueFloorMovement(3);
 
-        //    elevator.ArriveAtNextFloor();
+            var elevatorProcess = new ElevatorProcess(elevator);
+            elevatorProcess.ArriveAtNextFloor();
 
-        //    Assert.Equal(ElevatorStatus.MovingDown, elevator.Status);
-        //}
+            Assert.Equal(3, elevator.CurrentFloor);
+        }
     }
 }

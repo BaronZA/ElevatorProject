@@ -27,7 +27,6 @@ namespace Elevator
         // Assume the movement of elevators to next destination is the tick
         public void TimeTick()
         {
-            //Elevators.ForEach(t => t.ArriveAtNextFloor());
             Elevators.ForEach(t => new ElevatorProcess(t).ArriveAtNextFloor());
         }
     }
