@@ -91,16 +91,14 @@ namespace Elevator
                             people.Add(new Person(callingFloor, destinationFloor));
                         }
 
-
-                        shaftSystem.CallSoonestElevator(people, callingFloor);
+                        var shaftProcess = new ShaftSystemProcess(shaftSystem);
+                        shaftProcess.CallSoonestElevator(people, callingFloor);
                     }
                 }
 
                 //Tick happens whenever user chooses not to add button presses
                 shaftSystem.TimeTick();
             }
-
-            shaftSystem.CallSoonestElevator(new List<Person>(), 3);
         }
     }
 }

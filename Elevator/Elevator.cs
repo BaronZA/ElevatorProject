@@ -70,36 +70,6 @@ namespace Elevator
                 return ElevatorStatus.NotMoving;
             } }
 
-        public void ArriveAtNextFloor()
-        {
-            // Previous floor removed, now first element is current floor
-            if(FloorMovement.Count > 1)
-                FloorMovement.RemoveAt(0);
-
-            // Remove people in elevator that wanted to go to current floor
-            var peopleAtRightFloor = PeopleInElevator.Where(t => t.DestinationFloor == CurrentFloor).ToList();
-
-            foreach (var person in peopleAtRightFloor)
-            {
-                PeopleInElevator.Remove(person);
-            }
-
-            // Add pending people at this floor *****Check capacity
-            var pendingPeopleForFloor = PendingPassengers.Where(p => p.CallingFloor == CurrentFloor);
-             
-            // Add pending people
-            PeopleInElevator.AddRange(pendingPeopleForFloor);
-
-            // Add floors to series if they aren't already one of the destinations
-            foreach(var newPassengers in pendingPeopleForFloor)
-            {
-                AddUniqueFloorMovement(newPassengers.DestinationFloor);
-            }
-
-            // Remove passengers that boarded
-            PendingPassengers.RemoveAll(p => p.CallingFloor == CurrentFloor);
-        }
-
         public void AddUniqueFloorMovement(int destinationFloor)
         {
             if (!FloorMovement.Contains(destinationFloor))
